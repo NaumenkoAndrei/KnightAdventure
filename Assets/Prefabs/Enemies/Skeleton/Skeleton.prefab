@@ -143,10 +143,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9fa41e438e2d94db186fc1693912d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startingState: 0
+  _startingState: 1
   _roamingDistanceMax: 7
   _roamingDistanceMin: 3
   _roamingTimerMax: 2
+  _isChasingEnemy: 1
+  _chasingDistance: 4
+  _chasingSpeedMultiplier: 2
+  _isAttackingEnemy: 0
+  _attackingDistance: 2
+  _attackRate: 2
 --- !u!114 &5994072548290925277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +177,7 @@ GameObject:
   - component: {fileID: 8802030772649316315}
   - component: {fileID: 886100874836897111}
   - component: {fileID: 2514028094764676941}
+  - component: {fileID: 7091397302299633539}
   m_Layer: 0
   m_Name: SkeletonVisual
   m_TagString: Untagged
@@ -267,6 +274,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7091397302299633539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3976502460503731128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c554cd45e70f428de8252e10fefeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyAI: {fileID: 5587742362720254320}
 --- !u!1 &5005680889977860189
 GameObject:
   m_ObjectHideFlags: 0
