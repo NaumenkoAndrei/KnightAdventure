@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .vs
 .vsconfig
 Assembly-CSharp.csproj
@@ -9,15 +8,4 @@ NavMeshPlus.csproj
 NavMeshPlusEditor.csproj
 obj
 Temp
-||||||| a8e2d61
-=======
-.vs
-.vsconfig
-Assembly-CSharp.csproj
-Knight Adventure.sln
-Library
-Logs
-NavMeshPlus.csproj
-NavMeshPlusEditor.csproj
-obj
->>>>>>> 78cc38d93858020993234669f0b7a4fabd1a6e99
+
