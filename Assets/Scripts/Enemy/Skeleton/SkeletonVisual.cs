@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class SkeletonVisual : MonoBehaviour {
     [SerializeField] private EnemyAI _enemyAI;
 

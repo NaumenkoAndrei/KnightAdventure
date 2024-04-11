@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class SwordVisual : MonoBehaviour {
     [SerializeField] private Sword _sword;
 

@@ -4,6 +4,7 @@ using KnigthAdventure.Utils;
 using System;
 using UnityEngine.Rendering;
 
+[RequireComponent(typeof(NavMeshAgent))]
 public class EnemyAI : MonoBehaviour {
     [SerializeField] private State _startingState;
     [SerializeField] private float _roamingDistanceMax = 7f;

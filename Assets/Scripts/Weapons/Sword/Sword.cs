@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[RequireComponent(typeof(PolygonCollider2D))]
 public class Sword : MonoBehaviour {
     [SerializeField] private int _damageAmount = 1;
 

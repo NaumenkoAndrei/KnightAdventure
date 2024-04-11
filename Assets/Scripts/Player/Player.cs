@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 
 [SelectionBase]
+[RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour {
     public static Player Instance { get; private set; }
     public bool IsRunning { get; private set; }
