@@ -1,0 +1,10 @@
+.vs
+.vsconfig
+Assembly-CSharp.csproj
+KnightAdventure.sln
+Library
+Logs
+NavMeshPlus.csproj
+NavMeshPlusEditor.csproj
+obj
+Temp
