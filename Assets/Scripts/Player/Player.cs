@@ -26,6 +26,17 @@ public class Player : MonoBehaviour
         GameInput.Instance.OnPlayerAttack += GameInput_OnPlayerAttack;
     }
 
+    private void OnDestroy()
+    {
+        GameInput.Instance.OnPlayerAttack -= GameInput_OnPlayerAttack;
+    }
+
+    public Vector2 GetPlayerScreenPosition()
+    {
+        Vector2 playerScreenPosition = Camera.main.WorldToScreenPoint(transform.position);
+        return playerScreenPosition;
+    }
+
     private void GameInput_OnPlayerAttack(object sender, EventArgs e)
     {
         ActiveWeapon.Instance.GetActiveWeapon().Attack();
@@ -53,11 +64,5 @@ public class Player : MonoBehaviour
         {
             IsRunning = false;
         }
-    }
-
-    public Vector2 GetPlayerScreenPosition()
-    {
-        Vector2 playerScreenPosition = Camera.main.WorldToScreenPoint(transform.position);
-        return playerScreenPosition;
     }
 }

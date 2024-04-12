@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.AI;
 using KnigthAdventure.Utils;
 using System;
-using UnityEngine.Rendering;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyAI : MonoBehaviour
@@ -75,6 +74,11 @@ public class EnemyAI : MonoBehaviour
     {
         StateHandler();
         MovementDirectionhandler();
+    }
+
+    public float GetRoaminAnimationSpeed()
+    {
+        return _navMeshAgent.speed / _roamingSpeed;
     }
 
     private void StateHandler()
@@ -150,11 +154,6 @@ public class EnemyAI : MonoBehaviour
     private void ChasingTarget()
     {
         _navMeshAgent.SetDestination(Player.Instance.transform.position);
-    }
-
-    public float GetRoaminAnimationSpeed()
-    {
-        return _navMeshAgent.speed / _roamingSpeed;
     }
 
     private void CheckCurrentState()

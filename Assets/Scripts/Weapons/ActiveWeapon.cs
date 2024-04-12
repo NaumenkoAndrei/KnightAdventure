@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class ActiveWeapon : MonoBehaviour
 {
-    public static ActiveWeapon Instance { get; private set; }
-
     [SerializeField] private Sword _sword;
+    public static ActiveWeapon Instance { get; private set; }
 
     private void Awake()
     {

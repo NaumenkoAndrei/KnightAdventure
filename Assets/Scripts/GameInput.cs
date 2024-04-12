@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 public class GameInput : MonoBehaviour
 {
     public static GameInput Instance { get; private set; }
-
     public event EventHandler OnPlayerAttack;
 
     private PlayerInputActions _playerInputActions;
@@ -19,9 +18,9 @@ public class GameInput : MonoBehaviour
         _playerInputActions.Combat.Attack.started += PlayerAttack_started;
     }
 
-    private void PlayerAttack_started(InputAction.CallbackContext obj)
+    private void OnDestroy()
     {
-        OnPlayerAttack?.Invoke(this, EventArgs.Empty);
+        _playerInputActions.Combat.Attack.started -= PlayerAttack_started;
     }
 
     public Vector2 GetMovementVector()
@@ -34,5 +33,10 @@ public class GameInput : MonoBehaviour
     {
         Vector2 mousePosirion = Mouse.current.position.ReadValue();
         return mousePosirion;
+    }
+
+    private void PlayerAttack_started(InputAction.CallbackContext obj)
+    {
+        OnPlayerAttack?.Invoke(this, EventArgs.Empty);
     }
 }
