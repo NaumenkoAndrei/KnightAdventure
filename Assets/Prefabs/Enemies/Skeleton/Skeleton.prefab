@@ -117,7 +117,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2941618440408067149}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -208,7 +208,7 @@ MonoBehaviour:
   _isChasingEnemy: 1
   _chasingDistance: 4
   _chasingSpeedMultiplier: 2
-  _isAttackingEnemy: 0
+  _isAttackingEnemy: 1
   _attackingDistance: 2
   _attackRate: 2
 --- !u!114 &5994072548290925277
@@ -300,7 +300,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 956684375, guid: 2e7860e540b7a054f99d7e4d3befd0fd, type: 3}
+  m_Sprite: {fileID: 2072115122, guid: f8b39f35e5b53e640980d0852d567f48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -345,6 +345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyAI: {fileID: 5587742362720254320}
+  _enemyEntity: {fileID: 5994072548290925277}
 --- !u!1 &5005680889977860189
 GameObject:
   m_ObjectHideFlags: 0
