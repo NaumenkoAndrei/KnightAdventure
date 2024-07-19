@@ -7,11 +7,12 @@ using System;
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField] private State _startingState;
-    [SerializeField] private float _roamingDistanceMax = 7f;
+    [SerializeField] private MovementType _movementTypeEnemy;
+    [SerializeField] private float _roamingDistanceMax = 4f;
     [SerializeField] private float _roamingDistanceMin = 3f;
     [SerializeField] private float _roamingTimerMax = 2f;
 
-    [SerializeField] private bool _isChasingEnemy = false;
+    [SerializeField] private bool _isChasingEnemy = true;
     [SerializeField] private float _chasingDistance = 4f;
     [SerializeField] private float _chasingSpeedMultiplier = 2f;
 
@@ -57,6 +58,12 @@ public class EnemyAI : MonoBehaviour
         Chasing,
         Attacking,
         Death
+    }
+
+    private enum MovementType
+    {
+        AreaPatrolling,
+        PointPatrolling
     }
 
     private void Awake()
@@ -141,7 +148,10 @@ public class EnemyAI : MonoBehaviour
 
     private void Roaming()
     {
-        _startingPisition = transform.position;
+        if (_movementTypeEnemy == MovementType.AreaPatrolling)
+        {
+            _startingPisition = transform.position;
+        }
         _roamPosition = GetRoamingPosition();
         _navMeshAgent.SetDestination(_roamPosition);
     }
