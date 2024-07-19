@@ -3,7 +3,7 @@ guid: 2e7860e540b7a054f99d7e4d3befd0fd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -157,7 +157,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+      pivot: {x: 0.5199212, y: 0.32820988}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +178,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+      pivot: {x: 0.5142335, y: 0.32850823}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,7 +199,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+      pivot: {x: 0.50179017, y: 0.32791153}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,7 +220,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+      pivot: {x: 0.5020882, y: 0.32820988}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,7 +241,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+      pivot: {x: 0.50358033, y: 0.32880658}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,7 +262,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+      pivot: {x: 0.50350344, y: 0.327488}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,7 +283,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+      pivot: {x: 0.54974484, y: 0.32846025}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,7 +304,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+      pivot: {x: 0.54773355, y: 0.32769036}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

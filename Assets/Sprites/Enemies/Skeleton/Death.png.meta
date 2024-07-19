@@ -3,7 +3,7 @@ guid: 68f058e3d1bffd549814c454e86ee99b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -157,7 +157,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+      pivot: {x: 0.5181841, y: 0.32630676}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +178,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+      pivot: {x: 0.5298777, y: 0.32813853}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: Death_2
       rect:
         serializedVersion: 2
-        x: 300
+        x: 302
         y: 0
         width: 150
         height: 150
       alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+      pivot: {x: 0.5315224, y: 0.32726023}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,7 +220,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+      pivot: {x: 0.52734417, y: 0.32741535}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
